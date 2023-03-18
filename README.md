@@ -11,8 +11,8 @@ An USC Race On Project using AprilTags and OpenCV
 - Creating visual odometry scripts that use either AprilTags or ML-based feature point extraction (or maybe both!)
 
 
-**When in competition you need to disable wifi on raspberry pi**
-Modifying the Boot Config to Disable Wi-Fi
+# When in competition you need to disable wifi on raspberry pi
+**Modifying the Boot Config to Disable Wi-Fi**
 In this section, we will be modifying the Raspberry Pi’s boot configuration file.
 
 By modifying this file, we will be able to disable the Wi-Fi connection during the start-up sequence.
