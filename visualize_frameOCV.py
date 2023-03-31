@@ -88,8 +88,8 @@ while(cap.isOpened()):
     fwidth = (RES[0] + 31) // 32 * 32
     fheight = (RES[1] + 15) // 16 * 16
     # Load the Y (luminance) data from the stream
-    I_distorted = np.fromfile(yuv_img, dtype=np.uint8, count=fwidth * fheight).reshape((fheight, fwidth))
-    I = cv2.remap(I_distorted, camera_info["map_1"], camera_info["map_2"], interpolation=cv2.INTER_LINEAR)
+    #I_distorted = np.fromfile(yuv_img, dtype=np.uint8, count=fwidth * fheight).reshape((fheight, fwidth))
+    #I = cv2.remap(I_distorted, camera_info["map_1"], camera_info["map_2"], interpolation=cv2.INTER_LINEAR)
 
     detected_tags = detector.detect(I, estimate_tag_pose=True, camera_params=camera_info["params"],
                                     tag_size=tags.size)
